@@ -1,0 +1,423 @@
+.textclr{
+    color: blue;
+}
+
+.LoginBack{
+    background-image: url("../img/BG 2.svg");
+    /* background-position: center; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+}
+
+.LogoGrid{
+    box-shadow: 0 1px 6px 0 rgba(32, 33, 36, .28);
+    background-color: #fff;
+    padding: 45px 85px 45px 85px;
+    border-radius: 0px 5px 5px 0px;
+    margin: 60px 0px 0px -33px;
+}
+
+.LogoGrid h2{
+    font-size: 30px;
+    line-height: 40px;
+}
+
+.LogoGrid h5{
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 17px;
+}
+
+.LoginFrm{
+    padding: 55px 0px 55px 0px;
+}
+
+.LogoGrid h6{
+    color: #12305E;
+}
+
+.LogoBtn{
+    background-color: #008CB7 !important;
+    border: 1px #008CB7 !important;
+    border-radius: 18px !important;
+    font-size: 14px !important;
+    line-height: 13px !important;
+    padding: 10px 32px 10px 32px !important;
+}
+
+.borderBtn{
+    width: 100%;
+    color: #142A58 !important;
+    border-color: #142A58 !important;
+    background-color: #FFF !important;
+    border-radius: 12px !important;
+}
+
+.borderBtn:hover{
+    background-color: #142A58 !important;
+    color: #fff !important;
+}
+
+.ListGrid{
+    padding: 25% 0px 0% 20%;
+}
+
+.list-group-item {
+    padding: .75rem 1.25rem !important;
+    background-color: unset !important;
+    border: unset !important;
+    color: #fff !important;
+    font-weight: 400 !important;
+}
+
+/* Sign Up page */
+
+.ContainBtn{
+    width: 100%;
+    background-color: #142A58 !important;
+    border: #142A58 1px solid!important;
+    color: #fff;
+    border-radius: 10px;
+}
+
+.ContainBtn:hover{
+    background-color: #fff !important;
+    color: #142A58 !important;
+    font-weight: 600;
+}
+
+.SignUpForm h6{
+    font-size: 13px;
+}
+
+.TxtClr{
+    color: #259CC1;
+}
+
+.divider {
+    font-family: "Share Tech Mono", monospace;
+    color: #000;
+    font-size: 3vh;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.45);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .divider::before, .divider::after {
+    content: '';
+    display: block;
+    height: 0.09em;
+    min-width: 15vw;
+  }
+
+  .divider::before {
+    background: linear-gradient(to right, rgba(240, 240, 240, 0), #EDEDF0);
+    margin-right: 4vh;
+  }
+
+  .divider::after {
+    background: linear-gradient(to left, rgba(240, 240, 240, 0), #EDEDF0);
+    margin-left: 4vh;
+  }
+
+  .form-control{
+    border-radius: 12px !important;
+  }
+
+  .LogOutline{
+    border: 1px solid;
+    width: 100%;
+    color: #C5C5C5 !important;
+    background-color: #fff !important;
+    border: 1px solid #C5C5C5 !important;
+    border-radius: 10px !important;
+  }
+
+  .BtnImg{
+    height: 15px;
+    margin-top: -4px;
+  }
+
+  /* ome page design */
+  .textclr{
+    color: blue;
+  }
+
+.LoginBack{
+    background-image: url("../img/BG 2.svg");
+    /* background-position: center; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+}
+
+.LogoGrid{
+    box-shadow: 0 1px 6px 0 rgba(32, 33, 36, .28);
+    background-color: #fff;
+    padding: 45px 85px 45px 85px;
+    border-radius: 0px 5px 5px 0px;
+    margin: 60px 0px 0px -33px;
+}
+
+.LogoGrid h2{
+    font-size: 30px;
+    line-height: 40px;
+}
+
+.LogoGrid h5{
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 17px;
+}
+
+.LoginFrm{
+    padding: 55px 0px 55px 0px;
+}
+
+.LogoGrid h6{
+    color: #12305E;
+}
+
+.LogoBtn{
+    background-color: #008CB7 !important;
+    border: 1px #008CB7 !important;
+    border-radius: 18px !important;
+    font-size: 14px !important;
+    line-height: 13px !important;
+    padding: 10px 32px 10px 32px !important;
+}
+
+.borderBtn{
+    width: 100%;
+    color: #142A58 !important;
+    border-color: #142A58 !important;
+    background-color: #FFF !important;
+    border-radius: 12px !important;
+}
+
+.borderBtn:hover{
+    background-color: #142A58 !important;
+    color: #fff !important;
+}
+
+.ListGrid{
+    padding: 25% 0px 0% 20%;
+}
+
+.list-group-item {
+    padding: .75rem 1.25rem !important;
+    background-color: unset !important;
+    border: unset !important;
+    color: #fff !important;
+    font-weight: 400 !important;
+}
+
+
+/* Sign Up page */
+.ContainBtn{
+    width: 100%;
+    background-color: #142A58 !important;
+    border: #142A58 1px solid!important;
+    color: #fff;
+    border-radius: 10px;
+}
+
+.ContainBtn:hover{
+    background-color: #fff !important;
+    color: #142A58 !important;
+    font-weight: 600;
+}
+
+.SignUpForm h6{
+    font-size: 13px;
+}
+
+.TxtClr{
+    color: #259CC1;
+}
+
+.divider {
+    font-family: "Share Tech Mono", monospace;
+    color: #000;
+    font-size: 3vh;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.45);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .divider::before, .divider::after {
+    content: '';
+    display: block;
+    height: 0.09em;
+    min-width: 15vw;
+  }
+  .divider::before {
+    background: linear-gradient(to right, rgba(240, 240, 240, 0), #EDEDF0);
+    margin-right: 4vh;
+  }
+  .divider::after {
+    background: linear-gradient(to left, rgba(240, 240, 240, 0), #EDEDF0);
+    margin-left: 4vh;
+  }
+
+  .form-control{
+    border-radius: 12px !important;
+  }
+
+  .LogOutline{
+    border: 1px solid;
+    width: 100%;
+    color: #C5C5C5 !important;
+    background-color: #fff !important;
+    border: 1px solid #C5C5C5 !important;
+    border-radius: 10px !important;
+  }
+
+  .BtnImg{
+    height: 15px;
+    margin-top: -4px;
+  }
+
+
+  /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+  .main_grid{
+    padding: 50px 0px 50px 0px;
+  }
+
+  .Card{
+    width: 100%;
+    box-shadow: 0 6px 22px 0 rgba(0,0,0,0.08) !important;
+    border: 1px solid #ffffff !important;
+    border-radius: 5px !important;
+  }
+
+  .UserImg{
+    border-radius: 50%;
+  }
+
+  .UserTxt{
+    color: #6c757d!important;
+    font-size: 13px;
+    margin-top: -5px;
+  }
+
+  .visiter-list-image img {
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 50%;
+}
+
+.btn-light {
+    color: #212529;
+    background-color: #dae0e5 !important;
+    border-color: #d3d9df !important;
+}
+
+.visiter-list-image .green-indicator {
+    background-color: #eaecf4;
+    height: .75rem;
+    width: .75rem;
+    border-radius: 100%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border: .125rem solid #fff;
+}
+
+.bg-success {
+    background-color: #00c9a7 !important;
+}
+
+.visiter-list-image {
+    position: relative;
+    height: 2.5rem;
+    width: 2.5rem;
+}
+
+.visit-list .font-weight-bold {
+    font-weight: 500 !important;
+    word-break: break-all;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.text-gray {
+    color: #b7b9cc!important;
+}
+
+.visit-list .font-weight-bold div {
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.Img-box {
+    align-items: center;
+    display: flex;
+    margin-bottom: 2px;
+    justify-content: space-between;
+}
+
+.Img-box img {
+    width: 34%;
+    border-right: 2px solid transparent;
+}
+
+.job-grid .img-fluid {
+    width: 40px;
+    height: 40px;
+}
+
+.text-gray-500 {
+    color: #b7b9cc!important;
+}
+
+.overlap-rounded-circle .rounded-circle {
+    width: 22px;
+    height: 22px;
+    border: 2px solid #fff;
+    margin: 0 0 0 -9px;
+}
+
+.text-muted {
+    color: #6c757d!important;
+    font-size: 13px;
+}
+
+.ans-btn{
+    background-color: #152654 !important;
+    color: #fff !important;
+    border: 1px solid #152654 !important;
+    padding: 4px ;
+    font-size: 12px;
+}
+
+.ask-qus-model .modal-body{
+    padding: unset !important;
+}
+
+.header{
+    color: #000 !important;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.public_btn{
+    padding: 4px !important;
+    font-size: 12px !important;
+    /* width: 130%; */
+    background-color: #F8F8F8 !important;
+    color: gray !important;
+    border: 1px solid #F8F8F8 !important;
+}
+
+.ask-qus-model Form{
+    padding: 1rem !important;
+}
+
+.next-btn{
+    background-color: #008CB7 !important;
+    color: #fff !important;
+    border: 1px solid #008CB7 !important;
+}

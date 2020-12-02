@@ -480,7 +480,7 @@ class HomePage extends Component {
 
               {/* Ask a qustion people @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */}
               <Modal className="ask-qus-model" show={this.state.modalaskpeople} onHide={this.state.modalaskpeople}>
-            <Modal.Body>
+              <Modal.Body>
               <Row>
                 <Col md={12}>
                   <div className="p-3">
@@ -534,4 +534,4 @@ class HomePage extends Component {
   }
 }
 
-export default HomePage;
+export default HomePage

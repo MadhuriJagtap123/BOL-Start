@@ -421,3 +421,18 @@
     color: #fff !important;
     border: 1px solid #008CB7 !important;
 }
+
+/* @@@@@@@@@@@@@@@ User Profile */
+
+.TopBanner{
+    width: 100%;
+}
+
+.Userprofile img{
+    height: 2.5rem;
+    width: 2.5rem;
+}
+
+.imgWidth{
+    width: 100%;
+}

@@ -5,7 +5,7 @@ import linkImg from '../../../src/img/linkdin.png';
 // import './App.css';
 import { Container, Col, Row, Button, ListGroup, Form, Modal } from 'react-bootstrap';
 import '../../css/common.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/css/bootstrap.min.css';                                         
 
 
 class Login extends React.Component{
@@ -84,9 +84,6 @@ class Login extends React.Component{
             </Col>
           </Row>
         </div>
-
-
-
 
 
         <Modal show={this.state.modalsignup} onHide={this.state.modalsignup}>

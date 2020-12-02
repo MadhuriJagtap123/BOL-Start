@@ -21,6 +21,7 @@ import u5Img from '../../../src/img/u5.png';
 import u6Img from '../../../src/img/u6.png';
 import u7Img from '../../../src/img/u7.png';
 import in1Img from '../../../src/img/in1.png';
+import Auth0services from '../../services/auth0Services/Auth0Services'
 // import { Hidden } from '@material-ui/core';
 
 
@@ -56,7 +57,25 @@ class HomePage extends Component {
     modallogin: true,       
   })
 }
-
+handleLogout=()=>{
+  let userId=sessionStorage.getItem("UserId")
+  let data={
+    user_id:parseInt(userId)
+  }
+  Auth0services.logOut(data).then(response=>{
+    console.log("response=================", response);
+    if(response){
+      if(response.data.status){
+        alert(response.data.message)
+        sessionStorage.clear()
+        this.props.history.push('login')
+      }
+      else{
+        alert(response.data.message)
+      }
+    }
+  })
+}
   render() {
     return (
       <div>
@@ -78,8 +97,8 @@ class HomePage extends Component {
               </Nav>
               <Nav>
                 <Nav.Link href="#deets">More deets</Nav.Link>
-                <Nav.Link eventKey={2} href="#memes">
-                  Dank memes
+                <Nav.Link eventKey={2} onClick={this.handleLogout}>
+                  Logout
                 </Nav.Link>
               </Nav>
             </Navbar.Collapse>

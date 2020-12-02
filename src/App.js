@@ -12,7 +12,7 @@ class App extends Component {
   render() {
     return (
      <Router>
-     
+        <Route exact path="/" component={Login}></Route>
         <Route exact path="/login" component={Login}></Route>
         <Route path="/homePage" component={HomePage}></Route>
         <Route path="/profile" component={Profile}></Route>

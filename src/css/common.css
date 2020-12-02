@@ -436,3 +436,8 @@
 .imgWidth{
     width: 100%;
 }
+
+.addbtn{
+    margin-top: -16px;
+    color: blue;
+}

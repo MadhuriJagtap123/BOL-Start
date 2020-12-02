@@ -70,44 +70,93 @@ class Profile extends React.Component {
 
           <Row className="mt-3">
 
-            <Col class="col col-xl-6 col-lg-12 col-md-12 col-sm-12 col-12">
-              <div class="box shadow-sm border rounded bg-white mb-3">
-                <div class="box-body">
-                  <div class="d-flex align-items-center osahan-post-header p-3 border-bottom people-list">
+            <Col className="col col-xl-6 col-lg-12 col-md-12 col-sm-12 col-12">
+              <div className="box shadow-sm border rounded bg-white mb-3">
+                <div className="box-body">
+                  <div className="d-flex align-items-center osahan-post-header p-3 border-bottom people-list">
                     <div className="dropdown-list-image mr-3 Userprofile">
                       <img src={UprofileImg} className="rounded-circle" />
                     </div>
-                    <div class="font-weight-bold">
-                      <div class="text-truncate">Character Concept <span class="badge badge-dark ml-1">1</span></div>
-                      <div class="small text-muted"><span class="text-primary">You and 1 connection</span> have given endorsements for this skill
+                    <div className="font-weight-bold">
+                      <div className="text-truncate">Character Concept <span className="badge badge-dark ml-1">1</span></div>
+                      <div className="small text-muted"><span className="text-primary">You and 1 connection</span> have given endorsements for this skill
                     </div>
                     </div>
                   </div>
                 </div>
-                <div class="box-body">
+                <div className="box-body">
                   <img src={profileTimeImg} className="imgWidth" />
                 </div>
-                <div class="p-3 border-bottom">
-                  <a href="#" class="mr-3 text-secondary"><i class="fa fa-thumbs-up" aria-hidden="true"></i></a>
-                  <a href="#" class="mr-3 text-secondary"><i class="fa fa-thumbs-down" aria-hidden="true"></i></a>
-                  <a href="#" class="mr-3 text-secondary"><i class="fa fa-commenting" aria-hidden="true"></i></a>
-                  <a href="#" class="mr-3 text-secondary"><i class="fa fa-share-square-o" aria-hidden="true"></i></a>
+                <div className="p-3 border-bottom">
+                  <a href="#" className="mr-3 text-secondary"><i className="fa fa-thumbs-up" aria-hidden="true"></i></a>
+                  <a href="#" className="mr-3 text-secondary"><i className="fa fa-thumbs-down" aria-hidden="true"></i></a>
+                  <a href="#" className="mr-3 text-secondary"><i className="fa fa-commenting" aria-hidden="true"></i></a>
+                  <a href="#" className="mr-3 text-secondary"><i className="fa fa-share-square-o" aria-hidden="true"></i></a>
                 </div>
-                <div class="d-flex align-items-center osahan-post-header p-3 border-bottom people-list">
+                <div className="d-flex align-items-center osahan-post-header p-3 border-bottom people-list">
                   <div className="dropdown-list-image mr-3 Userprofile">
                     <img src={UprofileImg} className="rounded-circle" />
                   </div>
-                  <div class="font-weight-bold">
-                    <div class="text-truncate"><span class="text-primary">John Simon</span></div>
-                    <div class="small text-muted"><span class="text-primary">You and 1 connection </span>
+                  <div className="font-weight-bold">
+                    <div className="text-truncate"><span className="text-primary">John Simon</span></div>
+                    <div className="small text-muted"><span className="text-primary">You and 1 connection </span>
                       have given endorsements for this skill have given endorsements for this skill have given endorsements for this skill have given endorsements for this skill
                     </div>
-                    <div class="mt-2">
-                      <a href="#" class="mr-3 text-secondary"><span class="text-primary">Like</span></a>
-                      <a href="#" class="mr-3 text-secondary"><span class="text-primary">Dislike</span></a>
-                      <a href="#" class="mr-3 text-secondary"><span class="text-primary">Reply</span></a>
-                      <a href="#" class="mr-3 text-secondary">2 min ago</a>
+                    <div className="mt-2">
+                      <a href="#" className="mr-3 text-secondary"><span className="text-primary">Like</span></a>
+                      <a href="#" className="mr-3 text-secondary"><span className="text-primary">Dislike</span></a>
+                      <a href="#" className="mr-3 text-secondary"><span className="text-primary">Reply</span></a>
+                      <a href="#" className="mr-3 text-secondary">2 min ago</a>
                     </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="box shadow-sm border rounded bg-white mb-3">
+                <div className="box-title border-bottom p-3">
+                  <h6 className="m-0">Skill</h6>
+                  <i className="fa fa-plus float-right addbtn" aria-hidden="true"></i>
+                </div>
+                <div className="box-body p-0">
+                  <div className="p-3 d-flex align-items-center bg-light border-bottom osahan-post-header">
+                    <div className="dropdown-list-image">
+                      {/* <img className="rounded-circle" src="img/p6.png" alt=""> */}
+                    </div>
+                    <div className="font-weight-bold">
+                      <div className="text-truncate">Photoshop</div>
+                      <div className="small">Learm Ipsum is simply</div>
+                      <div className="small">Rating</div>
+                    </div>
+                    <span className="ml-auto mb-auto">
+                      <div className="btn-group">
+                        <i className="fa fa-pencil-square-o" aria-hidden="true"></i>
+                        <div className="dropdown-menu dropdown-menu-right" >
+                          <button className="dropdown-item" type="button"><i className="feather-trash"></i> Delete</button>
+                          <button className="dropdown-item" type="button"><i className="feather-x-circle"></i> Turn Off</button>
+                        </div>
+                      </div>
+                    </span>
+                  </div>
+
+
+                  <div className="p-3 d-flex align-items-center bg-light border-bottom osahan-post-header">
+                    <div className="dropdown-list-image">
+                      {/* <img className="rounded-circle" src="img/p6.png" alt=""> */}
+                    </div>
+                    <div className="font-weight-bold">
+                      <div className="text-truncate">React JS</div>
+                      <div className="small">Learm Ipsum is simply</div>
+                      <div className="small">Rating</div>
+                    </div>
+                    <span className="ml-auto mb-auto">
+                      <div className="btn-group">
+                        <i className="fa fa-pencil-square-o" aria-hidden="true"></i>
+                        <div className="dropdown-menu dropdown-menu-right" >
+                          <button className="dropdown-item" type="button"><i className="feather-trash"></i> Delete</button>
+                          <button className="dropdown-item" type="button"><i className="feather-x-circle"></i> Turn Off</button>
+                        </div>
+                      </div>
+                    </span>
                   </div>
                 </div>
               </div>
@@ -116,76 +165,78 @@ class Profile extends React.Component {
 
 
             <Col className="col col-xl-3 col-lg-12 col-12">
-              <div class="box shadow-sm border rounded bg-white mb-3">
-                <div class="box-title border-bottom p-3">
-                  <h6 class="m-0">Sanket Activity</h6>
+              <div className="box shadow-sm border rounded bg-white mb-3">
+                <div className="box-title border-bottom p-3">
+                  <h6 className="m-0">Sanket Activity</h6>
                 </div>
-                <div class="box-body pt-2">
-                  <div class="d-flex align-items-center mb-3 border-bottom pb-2">
-                    <div class="dropdown-list-image mr-3">
-                      {/* <img class="rounded-circle" src="img/p4.png" alt=""> */}
-                      <div class="status-indicator bg-success"></div>
+                <div className="box-body pt-2">
+                  <div className="d-flex align-items-center mb-3 border-bottom pb-2">
+                    <div className="dropdown-list-image mr-3">
+                      {/* <img className="rounded-circle" src="img/p4.png" alt=""> */}
+                      <div className="status-indicator bg-success"></div>
                     </div>
-                    <div class="font-weight-bold mr-2">
-                      <div class="text-truncate">Sanket Commited on a photo</div>
-                      <div class="small text-gray-500">5 mins ago</div>
-                    </div>
-                  </div>
-                  <div class="d-flex align-items-center mb-3 border-bottom pb-2">
-                    <div class="dropdown-list-image mr-3">
-                      {/* <img class="rounded-circle" src="img/p9.png" alt=""> */}
-                      <div class="status-indicator bg-success"></div>
-                    </div>
-                    <div class="font-weight-bold mr-2">
-                      <div class="text-truncate">Sanket has posted a photo</div>
-                      <div class="small text-gray-500">5 mins ago</div>
+                    <div className="font-weight-bold mr-2">
+                      <div className="text-truncate">Sanket Commited on a photo</div>
+                      <div className="small text-gray-500">5 mins ago</div>
                     </div>
                   </div>
-                  <div class="d-flex align-items-center mb-3 border-bottom pb-2">
-                    <div class="dropdown-list-image mr-3">
-                      {/* <img class="rounded-circle" src="img/p10.png" alt=""> */}
-                      <div class="status-indicator bg-success"></div>
+                  <div className="d-flex align-items-center mb-3 border-bottom pb-2">
+                    <div className="dropdown-list-image mr-3">
+                      {/* <img className="rounded-circle" src="img/p9.png" alt=""> */}
+                      <div className="status-indicator bg-success"></div>
                     </div>
-                    <div class="font-weight-bold mr-2">
-                      <div class="text-truncate">Sanket Liked her friend's post</div>
-                      <div class="small text-gray-500">5 mins ago</div>
-                    </div>
-                  </div>
-                  <div class="d-flex align-items-center mb-3 pb-2">
-                    <div class="dropdown-list-image mr-3">
-                      {/* <img class="rounded-circle" src="img/p11.png" alt=""> */}
-                      <div class="status-indicator bg-success"></div>
-                    </div>
-                    <div class="font-weight-bold mr-2">
-                      <div class="text-truncate">Sanket Has shared an album</div>
-                      <div class="small text-gray-500">5 mins ago</div>
+                    <div className="font-weight-bold mr-2">
+                      <div className="text-truncate">Sanket has posted a photo</div>
+                      <div className="small text-gray-500">5 mins ago</div>
                     </div>
                   </div>
+                  <div className="d-flex align-items-center mb-3 border-bottom pb-2">
+                    <div className="dropdown-list-image mr-3">
+                      {/* <img className="rounded-circle" src="img/p10.png" alt=""> */}
+                      <div className="status-indicator bg-success"></div>
+                    </div>
+                    <div className="font-weight-bold mr-2">
+                      <div className="text-truncate">Sanket Liked her friend's post</div>
+                      <div className="small text-gray-500">5 mins ago</div>
+                    </div>
+                  </div>
+                  <div className="d-flex align-items-center mb-3 pb-2">
+                    <div className="dropdown-list-image mr-3">
+                      {/* <img className="rounded-circle" src="img/p11.png" alt=""> */}
+                      <div className="status-indicator bg-success"></div>
+                    </div>
+                    <div className="font-weight-bold mr-2">
+                      <div className="text-truncate">Sanket Has shared an album</div>
+                      <div className="small text-gray-500">5 mins ago</div>
+                    </div>
+                  </div>
+
+
                 </div>
               </div>
             </Col>
 
 
             <Col className="col col-xl-3 col-lg-12 col-12">
-              <div class="box mb-3 shadow-sm border rounded bg-white profile-box text-center">
-                <div class="py-4 px-3 border-bottom">
+              <div className="box mb-3 shadow-sm border rounded bg-white profile-box text-center">
+                <div className="py-4 px-3 border-bottom">
                   <img src={UprofileImg} className="img-fluid mt-2 rounded-circle" alt="Responsive image" />
-                  {/* <img src="img/p13.png" class="img-fluid mt-2 rounded-circle" alt="Responsive image"> */}
-                  <h5 class="font-weight-bold text-dark mb-1 mt-4">Gurdeep Osahan</h5>
-                  <p class="mb-0 text-muted">UI / UX Designer</p>
+                  {/* <img src="img/p13.png" className="img-fluid mt-2 rounded-circle" alt="Responsive image"> */}
+                  <h5 className="font-weight-bold text-dark mb-1 mt-4">Gurdeep Osahan</h5>
+                  <p className="mb-0 text-muted">UI / UX Designer</p>
                 </div>
-                <div class="d-flex">
-                  <div class="col-6 border-right p-3">
-                    <h6 class="font-weight-bold text-dark mb-1">358</h6>
-                    <p class="mb-0 text-black-50 small">Connections</p>
+                <div className="d-flex">
+                  <div className="col-6 border-right p-3">
+                    <h6 className="font-weight-bold text-dark mb-1">358</h6>
+                    <p className="mb-0 text-black-50 small">Connections</p>
                   </div>
-                  <div class="col-6 p-3">
-                    <h6 class="font-weight-bold text-dark mb-1">85</h6>
-                    <p class="mb-0 text-black-50 small">Views</p>
+                  <div className="col-6 p-3">
+                    <h6 className="font-weight-bold text-dark mb-1">85</h6>
+                    <p className="mb-0 text-black-50 small">Views</p>
                   </div>
                 </div>
-                <div class="overflow-hidden border-top">
-                  <a class="font-weight-bold p-3 d-block" href="sign-in.html"> Log Out </a>
+                <div className="overflow-hidden border-top">
+                  <a className="font-weight-bold p-3 d-block" href="sign-in.html"> Log Out </a>
                 </div>
               </div>
             </Col>

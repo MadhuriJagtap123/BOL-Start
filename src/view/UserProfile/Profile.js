@@ -53,14 +53,7 @@ class Profile extends React.Component {
               <div className="row">
                 <div className="col-md-12">
                   <div className="d-flex align-items-center py-3">
-                    <div className="profile-left">
-                      <h5 className="font-weight-bold text-dark mb-1 mt-0">Google <span className="text-info"><i data-toggle="tooltip" data-placement="top" title="" className="feather-check-circle" data-original-title="Verified"></i></span></h5>
-                      <p className="mb-0 text-muted"> Internet | Mountain View, CA | 14,128,005 followers</p>
-                    </div>
-                    <div className="profile-right ml-auto">
-                      <button type="button" className="btn btn-light mr-2"> <i className="feather-external-link"></i> Visit website </button>
-                      <button type="button" className="btn btn-primary"> <i className="feather-plus"></i> Follow </button>
-                    </div>
+                 tab
                   </div>
                 </div>
               </div>

@@ -168,7 +168,7 @@ handleLogout=()=>{
 
               {/* @@@@@@@@@@@@@@@@@@ middle grid structure @@@@@@@@@@@@@@@@@@ */}
               <Col md={6}>
-                <Row>
+                 <Row className="mid-row">
                   <Col md={12}>
                     <div className="box shadow-sm border rounded bg-white mb-3 osahan-post">
                       <div className="p-3 d-flex align-items-center border-bottom">

@@ -422,6 +422,11 @@
     border: 1px solid #008CB7 !important;
 }
 
+ .mid-row{
+    margin-right: -27px !important;
+    margin-left: -27px !important;
+  }
+
 /* @@@@@@@@@@@@@@@ User Profile */
 
 .TopBanner{

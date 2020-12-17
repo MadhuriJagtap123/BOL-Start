@@ -1,7 +1,19 @@
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+}
+.cust_container {
+    height: 100%;
+}
 .textclr{
     color: blue;
 }
-
+#root {
+    height: 100%;
+}
 .LoginBack{
     background-image: url("../img/BG 2.svg");
     /* background-position: center; */
@@ -15,7 +27,7 @@
     background-color: #fff;
     padding: 45px 85px 45px 85px;
     border-radius: 0px 5px 5px 0px;
-    margin: 60px 0px 0px -33px;
+    margin: 0px 0px 0px -33px;
 }
 
 .LogoGrid h2{
@@ -30,7 +42,17 @@
 }
 
 .LoginFrm{
-    padding: 55px 0px 55px 0px;
+        display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+.cust_row {
+    width: 100%;
+}
+
+.btn_pointer {
+    cursor: pointer;
 }
 
 .LogoGrid h6{
@@ -109,7 +131,7 @@
     content: '';
     display: block;
     height: 0.09em;
-    min-width: 15vw;
+    min-width: 12vw;
   }
 
   .divider::before {
@@ -158,7 +180,7 @@
     background-color: #fff;
     padding: 45px 85px 45px 85px;
     border-radius: 0px 5px 5px 0px;
-    margin: 60px 0px 0px -33px;
+    margin: 0px 0px 0px -33px;
 }
 
 .LogoGrid h2{
@@ -172,9 +194,7 @@
     line-height: 17px;
 }
 
-.LoginFrm{
-    padding: 55px 0px 55px 0px;
-}
+
 
 .LogoGrid h6{
     color: #12305E;
@@ -251,7 +271,7 @@
     content: '';
     display: block;
     height: 0.09em;
-    min-width: 15vw;
+    min-width: 12vw;
   }
   .divider::before {
     background: linear-gradient(to right, rgba(240, 240, 240, 0), #EDEDF0);

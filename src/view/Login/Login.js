@@ -34,10 +34,33 @@ class Login extends React.Component {
   handleShowsignupmoadl = () => {
     this.setState({
       modalsignup: true,
+      modallogin: false
+
+    })
+  }
+handleShowLoginHideForgot = () => {
+  this.setState({
+      modalforgot: false,
+      modallogin: true
+
+    })
+}
+ handleShowsignupmoadlForSignUp = () => {
+    this.setState({
+      modalsignup: true,
 
     })
   }
 
+  handleShowForgotmodal = () => {
+    // this.props.history.push('homePage')
+    this.setState({
+      modalforgot: true,
+      modallogin: false
+
+
+    })
+  }
 
   handleShowloginmodal = () => {
     // this.props.history.push('homePage')
@@ -47,10 +70,20 @@ class Login extends React.Component {
     })
   }
 
+  handleShowloginmodalForSignIn = () => {
+    // this.props.history.push('homePage')
+    this.setState({
+      modallogin: true,
+       modalsignup: false,
+    })
+  }
+
   handleClose = () => {
     this.setState({
       modalsignup: false,
-      modallogin: false
+      modallogin: false,
+      modalforgot: false,
+
     })
   }
   validate=()=>{
@@ -250,9 +283,9 @@ class Login extends React.Component {
 
   render() {
     return (
-      <Container>
+      <Container className="cust_container">
         <div className="LoginFrm">
-          <Row>
+          <Row className="align-items-center cust_row">
             <Col>
               <div className="LoginBack">
                 <div className="ListGrid">
@@ -291,7 +324,7 @@ class Login extends React.Component {
         </div>
 
 
-        <Modal show={this.state.modalsignup} onHide={this.state.modalsignup}>
+        <Modal show={this.state.modalsignup} onHide={this.handleClose}>
           <Modal.Body>
             {/* <Row className="pb-2">
               <Col md={12}>
@@ -334,7 +367,7 @@ class Login extends React.Component {
                   <Button className="LogOutline"> <img src={linkImg} className="BtnImg mr-2" />Join with Google</Button>
                 </Col>
                 <Col md={12} className="mt-4 text-center">
-                  <h6>Already on BolStart?<span className="TxtClr"> Sign in</span></h6>
+                  <h6>Already on BolStart?<span className="TxtClr btn_pointer" onClick={this.handleShowloginmodalForSignIn}> Sign in </span></h6>
                 </Col>
               </Row>
             </Form>
@@ -343,7 +376,7 @@ class Login extends React.Component {
 
 
 
-        <Modal show={this.state.modallogin} onHide={this.state.modallogin}>
+        <Modal show={this.state.modallogin} onHide={this.handleClose}>
           <Modal.Body>
             {/* <Row className="pb-2">
               <Col md={12}>
@@ -366,7 +399,56 @@ class Login extends React.Component {
                   </Button>
                 </Col>
                 <Col md={12} className="mt-4 text-center">
-                  <h6 className="TxtClr">Forgot Password? | Sing up</h6>
+                  <h6 className="TxtClr"><span className="btn_pointer" onClick={this.handleShowForgotmodal}>Forgot Password? </span> | <span className="btn_pointer" onClick={this.handleShowsignupmoadlForSignUp}> Sing up</span></h6>
+                </Col>
+                <Col md={12} className="mt-3 text-center">
+                  <div className="divider">or</div>
+                </Col>
+                <Col md={12} className="mt-3 text-center">
+                  <Button className="LogOutline"> <img src={googleImg} className="BtnImg mr-2" />Join with Google</Button>
+                </Col>
+                <Col md={6} className="mt-3 text-center">
+                  <Button className="LogOutline"> <img src={fbImg} className="BtnImg mr-2" />Join with Google</Button>
+                </Col>
+                <Col md={6} className="mt-3 text-center">
+                  <Button className="LogOutline"> <img src={linkImg} className="BtnImg mr-2" />Join with Google</Button>
+                </Col>
+                <Col md={12} className="mt-4 text-center">
+                  {/* <h6>Already on BolStart?<span className="TxtClr"> Sign in</span></h6> */}
+                </Col>
+              </Row>
+            </Form>
+
+          </Modal.Body>
+        </Modal>
+
+
+
+
+        <Modal show={this.state.modalforgot} onHide={this.handleClose}>
+          <Modal.Body>
+            {/* <Row className="pb-2">
+              <Col md={12}>
+                <i class="fa fa-times float-right" aria-hidden="true" onClick={this.handleClose}></i>
+              </Col>
+            </Row> */}
+            <Form className="SignUpForm mt-3">
+              <Row>
+                <Col md={12}>
+                  <Form.Control placeholder="Password" name="l_email" onChange={this.handleLoginChange}/>
+                  <div className="text-danger">{this.state.l_emailErr}</div>
+                </Col>
+                <Col md={12} className="mt-2">
+                  <Form.Control placeholder="Confirm Password"  name="l_password"  onChange={this.handleLoginChange} />
+                  <div className="text-danger">{this.state.l_passwordErr}</div>
+                </Col>
+                <Col md={12} className="mt-2 text-center">
+                  <Button className="ContainBtn" disabled={this.state.l_email!==""&&this.state.l_password?false:true} onClick={this.handleLogin}>
+                    Submit
+                  </Button>
+                </Col>
+                <Col md={12} className="mt-4 text-center">
+                  <h6 className="TxtClr"><span className="btn_pointer" onClick={this.handleShowLoginHideForgot}> Sing In</span></h6>
                 </Col>
                 <Col md={12} className="mt-3 text-center">
                   <div className="divider">or</div>
